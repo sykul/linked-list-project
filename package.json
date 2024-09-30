@@ -15,5 +15,6 @@
     "url": "https://github.com/sykul/linked-list-project/issues"
   },
   "homepage": "https://github.com/sykul/linked-list-project#readme",
-  "description": ""
+  "description": "",
+  "type": "module"
 }

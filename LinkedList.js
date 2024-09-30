@@ -5,11 +5,11 @@ class LinkedList {
         this.length = 0;
     }
 
-    this.append(value) {
+    append(value) {
 
     }
 
-    this.prepend(value) {
+    prepend(value) {
 
     }
 
@@ -17,31 +17,31 @@ class LinkedList {
         // return total number of nodes in list
     }
 
-    get head() {
+    get gethead() {
         // returns first node in list
     }
 
-    get tail() {
+    get gettail() {
         // returns first node in list
     }
 
-    this.at(index) {
+    at(index) {
         // returns the node at the given index
     }
 
-    this.pop() {
+    pop() {
         // removes last element
     }
 
-    this.contains(value) {
+    contains(value) {
         // returns true if list contains value
     }
 
-    this.find(value) {
+    find(value) {
         // return index of node containing value, or null if not found
     }
 
-    this.toString() {
+    toString() {
         // represents LinkedList objects as strings
         // format: ( value ) -> ( value ) -> ( value ) -> null
     }

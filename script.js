@@ -1,4 +1,5 @@
-import { LinkedList } from "./LinkedList"
-import { ListNode } from "./ListNode"
+import { LinkedList } from "./LinkedList.js"
+import { ListNode } from "./ListNode.js"
 
 const myLinkedList = new LinkedList()
+console.log('hi')
