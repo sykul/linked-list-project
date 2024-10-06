@@ -1,12 +1,15 @@
+import { ListNode } from "./ListNode.js";
+
 class LinkedList {
     constructor() {
+        this.node = new ListNode();
         this.head = null;
         this.tail = null;
         this.length = 0;
     }
 
     append(value) {
-
+        this.head = new ListNode();
     }
 
     prepend(value) {
