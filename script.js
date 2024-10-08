@@ -1,6 +1,9 @@
-import { LinkedList } from "./LinkedList.js"
-import { ListNode } from "./ListNode.js"
+import { LinkedList } from "./LinkedList.js";
 
-const myLinkedList = new LinkedList()
-myLinkedList.append()
-console.log(myLinkedList)
+const myLinkedList = new LinkedList("initial value");
+myLinkedList.append("new1");
+myLinkedList.append("new2");
+console.log("myLinkedList.head.next: ");
+console.log(myLinkedList.head.next);
+console.log("myLinkedList:");
+console.log(myLinkedList);
