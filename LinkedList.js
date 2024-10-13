@@ -69,8 +69,15 @@ class LinkedList {
         this.length = this.length - 1;
     }
 
-    contains(value) {
+    contains(searchValue) {
         // returns true if list contains value
+        let tmpNode = this.head;
+        for (let i; i < this.length; i++) {
+            if (tmpNode.value === searchValue) {
+                return true;
+            };
+        }
+        return false;
     }
 
     find(value) {
