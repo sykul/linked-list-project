@@ -6,7 +6,7 @@ class LinkedList {
         this.node.next = null;
         this.head = {...this.node};
         this.tail = {...this.node};
-        this.length = 0;
+        this.length = 1;
     }
 
     append(value) {
@@ -16,10 +16,13 @@ class LinkedList {
         }
         tmp.next = new ListNode(value, null)
         this.tail = tmp.next;
+        this.length += 1;
     }
 
     prepend(value) {
-
+        let newNode = new ListNode(value, this.head);
+        this.head = newNode;
+        this.length += 1;
     }
 
     get size() {
@@ -28,10 +31,12 @@ class LinkedList {
 
     get gethead() {
         // returns first node in list
+        return this.head;
     }
 
     get gettail() {
         // returns first node in list
+        return this.tail;
     }
 
     at(index) {
