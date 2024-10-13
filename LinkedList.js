@@ -52,11 +52,21 @@ class LinkedList {
             }
             i++;
         }
-        return `RETURNED: ${tmpNode}`;
+        return tmpNode;
     }
 
     pop() {
         // removes last element
+        let tmpNode = this.head;
+        if (this.length === 0) {
+            return;
+        }
+        while (tmpNode.next !== null) {
+            tmpNode = tmpNode.next;
+        }
+        tmpNode = null;
+        this.tail = null;
+        this.length = this.length - 1;
     }
 
     contains(value) {
