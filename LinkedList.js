@@ -27,6 +27,7 @@ class LinkedList {
 
     get size() {
         // return total number of nodes in list
+        return this.length;
     }
 
     get gethead() {
@@ -41,6 +42,17 @@ class LinkedList {
 
     at(index) {
         // returns the node at the given index
+        let i = 0;
+        let tmpNode = this.head;
+        while (i < index) {
+            console.log(`index: ${i}, tmpNode: ${tmpNode}`)
+            tmpNode = tmpNode.next;
+            if (tmpNode === null) {
+                return 'index not available';
+            }
+            i++;
+        }
+        return `RETURNED: ${tmpNode}`;
     }
 
     pop() {

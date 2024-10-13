@@ -7,3 +7,4 @@ console.log("~~~myLinkedList.head.next: ~~~");
 console.log(myLinkedList.head.next);
 console.log("~~~ myLinkedList: ~~~");
 console.log(myLinkedList);
+console.log(myLinkedList.at(1))
