@@ -96,6 +96,15 @@ class LinkedList {
   toString() {
     // represents LinkedList objects as strings
     // format: ( value ) -> ( value ) -> ( value ) -> null
+    let tmpNode = this.head;
+    let myString = `( ${tmpNode.value} )`;
+    tmpNode = tmpNode.next;
+    while (tmpNode !== null) {
+      myString = `${myString} -> ( ${tmpNode.value} )`;
+      tmpNode = tmpNode.next;
+    }
+    myString = `${myString} -> ( ${tmpNode} )`;
+    return myString;
   }
 
   // extra credit
